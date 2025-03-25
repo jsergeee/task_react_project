@@ -1,13 +1,22 @@
-import "./App.css";
-function App(props) {
-  const topPosition = "40px";
+import React, { useState } from "react";
+import "./app.css";
+import axios from "axios";
+
+export function Counter() {
+  const [count, setCount] = useState(0);
+
   return (
-    <div>
-      <header className="App-header" style={{ top: topPosition }}>
-        My First React App
-        <h3>Hello, {props.name}</h3>
-      </header>
-    </div>
+    <>
+      <h1 className="header">Мое первое приложение</h1>{" "}
+      {/* Заголовок вынесен за пределы контейнера */}
+      <div className="container_wrapper">
+        <div className="counter">{count}</div> {/* Счетчик */}
+        <button className="counter-button" onClick={() => setCount(count + 1)}>
+          Click!
+        </button>
+      </div>
+    </>
   );
 }
-export default App;
+
+export default Counter;

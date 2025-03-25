@@ -12,7 +12,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -32,12 +31,10 @@
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
-
 .container_wrapper {
   display: flex;
   align-items: center;
@@ -46,5 +43,15 @@
 }
 
 .counter-button {
+  display: block;
   margin: 10px;
+  background-color: rgb(255, 0, 0);
 }
+
+.container {
+  display: block;
+}
+
+.header {
+  align-items: center;
+}/*# sourceMappingURL=app.css.map */
